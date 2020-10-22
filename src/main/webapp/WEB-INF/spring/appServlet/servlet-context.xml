@@ -42,6 +42,15 @@
 		<beans:bean id="jusolinkService" class="com.jusolink.api.AddressServiceImp">
 			<beans:property name="linkID" value="#{EXAMPLE_CONFIG.LinkID}"/>
 			<beans:property name="secretKey" value="#{EXAMPLE_CONFIG.SecretKey}"/>
+			
+			<!-- DMZ Proxy 설정시 아래코드 참조-->
+			
+			<!-- Linkhub 인증서버 Proxy Target -->
+	        <!-- <beans:property name="authURL" value="http://{ProxyIP:Port}"/> -->
+	        
+	        <!-- JUSOLINK API Proxy Target -->
+	        <!-- <beans:property name="serviceURL" value="http://{ProxyIP:Port}"/> -->
+	         
 		</beans:bean>
 	</beans:beans>
 </beans:beans>
