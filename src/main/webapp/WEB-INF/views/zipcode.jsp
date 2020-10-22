@@ -253,7 +253,7 @@
 				// 도로명주소 선택
 				if(document.getElementById('road').checked){
 
-					zipcode = document.getElementById('road_zipcode').value;
+					zipcode = document.getElementById('road_sectionNum').value;
 					roadAddr1 = document.getElementById('roadAddr1').value;
 					roadAddr2 = document.getElementById('roadAddr2').value;
 					roadAddrDetail = document.getElementById('road_detail').value;
@@ -266,7 +266,7 @@
 
 					// 지번주소 선택
 					} else {
-						zipcode = document.getElementById('jibun_zipcode').value;
+						zipcode = document.getElementById('jibun_sectionNum').value;
 						addrResult = document.getElementById('jibunAddr').value;
 						detail = document.getElementById('jibun_detail').value;
 
